@@ -6,3 +6,5 @@ for (const a of document.querySelectorAll('a[href*="#"]')) {
 		ev.preventDefault()
 	})
 }
+
+

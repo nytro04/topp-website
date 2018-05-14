@@ -7,6 +7,7 @@
     <title>Topp Core Security</title>
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/peppermint.required.css">
 </head>
 
 <body>
@@ -51,8 +52,10 @@
             </div>
 
             <div>
-                <button class="call-to-action"  href="#contact"><img src="img/svg/phone-receiver.svg" alt="homepage">   Talk to Us</button>
-                <button class="call-to-action"  href="#services"><img src="img/svg/settings-work-tool.svg" alt="services">   Our Services</button>
+                <button class="call-to-action" href="#contact">
+                    <img src="img/svg/phone-receiver.svg" alt="homepage"> Talk to Us</button>
+                <button class="call-to-action" href="#services">
+                    <img src="img/svg/settings-work-tool.svg" alt="services"> Our Services</button>
             </div>
         </div>
     </div>
@@ -100,37 +103,52 @@
             <h2>About Us</h2>
             <div class="row">
                 <div class="column carousel">
-                    <img src="https://via.placeholder.com/400x200" alt="placeholder">
+                    <div class="peppermint" id="peppermint">
+                        <figure>
+                            <img src="img/images/new.jpg" alt="man guard"> 
+                        </figure>
+                        <figure>
+                            <img src="img/images/55.jpg" alt="executive protection"> 
+                        </figure>
+                        <figure>
+                            <img src="img/images/elec.jpg" alt="Electronic security"> 
+                        </figure>
+                        <figure>
+                            <img src="img/images/inve.jpg" alt="Investigation"> 
+                        </figure>
+                    </div>
+
                 </div>
-                <ol class="column">
-                    <li>
-                        <h3>Who Are We?</h3>
-                        <p>Topp Core Security Ghana Limited is Ghanaian owned company established in 2011 under the laws of
-                            Ghana and a member of the Association of private security Organizations of Ghana. We provide
-                            our clients with the best security solutions.</p>
-                    </li>
-
-                    <li>
-                        <h3>Our Vision</h3>
-                        <p>To spearhead security delivery systems in Ghana and West Africa through a high sense of professionalism
-                            and urgency.</p>
-                    </li>
-
-                    <li>
-                        <h3>Our Mission</h3>
-                        <p>Topp Core Security’s mission is to exceed our client’s specific and customized security needs by
-                            delivering the highest quality of professional security service based on the trust and confidence.
-                            To provide exclusive security service to individuals and corporate institutions with uniquesolutions
-                            at a competitive rate</p>
-                    </li>
-                    <li>
-                        <h3>Core Values</h3>
-                        <p>We value quality partnershipintegrity, exceptional customer service,personal growth and comunity
-                            leadership
-                        </p>
-                    </li>
-                </ol>
             </div>
+            <ol class="column">
+                <li>
+                    <h3>Who Are We?</h3>
+                    <p>Topp Core Security Ghana Limited is Ghanaian owned company established in 2011 under the laws of Ghana
+                        and a member of the Association of private security Organizations of Ghana. We provide our clients
+                        with the best security solutions.</p>
+                </li>
+
+                <li>
+                    <h3>Our Vision</h3>
+                    <p>To spearhead security delivery systems in Ghana and West Africa through a high sense of professionalism
+                        and urgency.</p>
+                </li>
+
+                <li>
+                    <h3>Our Mission</h3>
+                    <p>Topp Core Security’s mission is to exceed our client’s specific and customized security needs by delivering
+                        the highest quality of professional security service based on the trust and confidence. To provide
+                        exclusive security service to individuals and corporate institutions with uniquesolutions at a competitive
+                        rate
+                    </p>
+                </li>
+                <li>
+                    <h3>Core Values</h3>
+                    <p>We value quality partnershipintegrity, exceptional customer service,personal growth and comunity leadership
+                    </p>
+                </li>
+            </ol>
+        </div>
         </div>
     </section>
 
@@ -189,5 +207,18 @@
 
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/peppermint.min.js"></script>
+<script>
+    var slider = Peppermint(document.getElementById('peppermint'), {
+	dots: true,
+	slideshow: true,
+	speed: 300,
+	slideshowInterval: 5000,
+	stopSlideshowAfterInteraction: true,
+	onSetup: function(n) {
+	  console.log('Peppermint setup done. Slides found: ' + n);
+	}
+  });
+</script>
 
 </html>
