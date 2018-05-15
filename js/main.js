@@ -6,12 +6,10 @@ function smoothScroll(ev) {
 	}
 }
 
-    const siema = new Siema({ selector: '.carousel', duration: 400, loop: true });
-    setInterval(() => {
-        siema.next()
-	}, 4000);
-	
-	document.querySelector('.prev').addEventListener('click', () => siema.prev());
-	document.querySelector('.next').addEventListener('click', () => siema.next());
-	
+const siema = new Siema({ duration: 400, loop: true });
+setInterval(() => {
+	siema.next()
+}, 4000);
 
+document.querySelector('.prev').addEventListener('click', () => siema.prev());
+document.querySelector('.next').addEventListener('click', () => siema.next());

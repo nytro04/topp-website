@@ -4,7 +4,7 @@
 	font-weight: 400;
 	font-size: 16px;
 	text-align: center;
-	-ms-overflow-style: -ms-autohiding-scrollbar; 
+	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 *,
@@ -113,7 +113,7 @@ h2 + p{
 	color: #ffda44;
 	border-radius: 5px;
 	width:130px;
-	height:40px;	
+	height:40px;
 	margin-right: 1rem;
 }
 
@@ -125,12 +125,6 @@ h2 + p{
 .subtitle {
 	font-size: 2.5rem;
 	margin: 0;
-}
-
-.arrow {
-	display: flex;
-	justify-content: flex-start;
-
 }
 
 .row {
@@ -157,8 +151,14 @@ h2 + p{
 	grid-column: 2 3;
 }
 
-.carousel {
+.carousel-wrapper {
 	align-self: center;
+}
+
+.arrows button {
+	margin-top: 1rem;
+	background: none;
+	border: none;
 }
 
 ol {
@@ -188,16 +188,16 @@ footer {
 	.hero {
 		height: calc(100vh - 5rem);
 	}
-	
+
 	.column + .column {
 		margin-top: 1rem;
 		margin-left: 0;
 	}
-	
+
 	.split-view {
 		display: block;
 	}
-	
+
 	.left-view {
 		margin-bottom: 1rem;
 	}

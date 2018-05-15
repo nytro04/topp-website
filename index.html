@@ -7,6 +7,9 @@
     <title>Topp Core Security</title>
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/lazysizes.min.js" async></script>
+    <script src="js/siema.min.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -103,13 +106,21 @@
         <div class="container">
             <h2>About Us</h2>
             <div class="split-view">
-                <div class="left-view carousel siema">
-
-                    <img class="lazyload" data-src="img/images/new.jpg" alt="man guard">
-                    <img class="lazyload" data-src="img/images/55.jpg" alt="executive protection">
-                    <img class="lazyload" data-src="img/images/elec.jpg" alt="Electronic security">
-                    <img class="lazyload" data-src="img/images/inve.jpg" alt="Investigation">
-
+                <div class="left-view carousel-wrapper">
+                    <div class="siema">
+                        <img class="lazyload" data-src="img/images/new.jpg" alt="man guard">
+                        <img class="lazyload" data-src="img/images/55.jpg" alt="executive protection">
+                        <img class="lazyload" data-src="img/images/elec.jpg" alt="Electronic security">
+                        <img class="lazyload" data-src="img/images/inve.jpg" alt="Investigation">
+                    </div>
+                    <div class="arrows">
+                        <button class="prev">
+                            <img src="img/svg/chevron-pointing-to-the-left (1).svg" alt="left arrow">
+                        </button>
+                        <button class="next">
+                            <img src="img/svg/right-chevron.svg" alt="right arrow">
+                        </button>
+                    </div>
                 </div>
 
                 <ol class="right-view">
@@ -142,11 +153,6 @@
                     </li>
                 </ol>
             </div>
-            <div class="arrow">
-                <img class="prev" src="img/svg/chevron-pointing-to-the-left (1).svg" alt="">
-                <img class="next" src="img/svg/right-chevron.svg" alt="">                
-            </div>
-
         </div>
     </section>
 
@@ -202,12 +208,5 @@
     </footer>
 
 </body>
-
-
-
-<script src="js/siema.min.js"></script>
-<script src="js/lazysizes.min.js" async=""></script>
-<script type="text/javascript" src="js/main.js"></script>
-
 
 </html>
